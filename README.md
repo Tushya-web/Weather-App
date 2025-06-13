@@ -17,10 +17,9 @@ Hourly Forecast
 
 ▪️ Presents daily temperature and conditions for the next five days .
 
-Allow Location
+Unit Switching
 
-▪️ Just Allow Location it will auto Fetch Your Location
-
+▪️Toggle between Celsius and Fahrenheit 
 
 Location Input
 
@@ -30,10 +29,9 @@ Responsive Design
 
 ▪️Adapts smoothly across devices of varying screen sizes via Bootstrap and custom media queries 
 
-.
 
 🛠️ Tech Stack
-Frontend: HTML5, CSS3, JavaScript (ES6+)
+Frontend: HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
 
 Libraries: Bootstrap for styling and responsiveness
 
