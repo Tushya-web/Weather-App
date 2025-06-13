@@ -5,6 +5,8 @@ const temp = document.getElementById("temp")
 const current = document.getElementById("current")
 const maxtemp = document.getElementById("maxtemp")
 
+const toggle = document.getElementById("toggle")
+
 const time = document.querySelectorAll("#local_time")
 const humidity = document.getElementById("humidity")
 const wind = document.getElementById("wind")
@@ -123,6 +125,74 @@ search.addEventListener("click", async () => {
         return;
     }
 
+    toggle.addEventListener("click", () => {
+    if(toggle.checked){
+    
+    console.log("F");
+    temp.innerText =`${result.current.temp_f}`+ `°F`;
+    maxtemp.innerText = `${result.forecast.forecastday[0].day.mintemp_f}` + `°F` + ` ~ `  + `${result.forecast.forecastday[0].day.maxtemp_f}` + `°F`; 
+    tempd1.innerText =   `${result.forecast.forecastday[0].day.mintemp_f}` + `°F` + ` ~ ` + `${result.forecast.forecastday[0].day.maxtemp_c}` + `°F` ;
+    tempd2.innerText =   `${result.forecast.forecastday[1].day.mintemp_f}` + `°F` + ` ~ ` + `${result.forecast.forecastday[1].day.maxtemp_c}` + `°F` ;
+    tempd3.innerText =   `${result.forecast.forecastday[2].day.mintemp_f}` + `°F` + ` ~ ` + `${result.forecast.forecastday[2].day.maxtemp_c}` + `°F` ;
+    tempd4.innerText =   `${result.forecast.forecastday[3].day.mintemp_f}` + `°F` + ` ~ ` + `${result.forecast.forecastday[3].day.maxtemp_c}` + `°F` ;
+    tempd5.innerText =   `${result.forecast.forecastday[4].day.mintemp_f}` + `°F` + ` ~ ` + `${result.forecast.forecastday[4].day.maxtemp_c}` + `°F` ;
+
+        
+    t1temp.innerText = `${result.forecast.forecastday[0].hour[5].temp_f}` + `°F`;
+    t2temp.innerText = `${result.forecast.forecastday[0].hour[6].temp_f}` + `°F`;
+    t3temp.innerText = `${result.forecast.forecastday[0].hour[7].temp_f}` + `°F`;
+    t4temp.innerText = `${result.forecast.forecastday[0].hour[8].temp_f}` + `°F`;
+    t5temp.innerText = `${result.forecast.forecastday[0].hour[9].temp_f}` + `°F`;
+    t6temp.innerText = `${result.forecast.forecastday[0].hour[10].temp_f}` + `°F`;
+    t7temp.innerText = `${result.forecast.forecastday[0].hour[11].temp_f}` + `°F`;
+    t8temp.innerText = `${result.forecast.forecastday[0].hour[12].temp_f}` + `°F`;
+    t9temp.innerText = `${result.forecast.forecastday[0].hour[13].temp_f}` + `°F`;
+    t10temp.innerText = `${result.forecast.forecastday[0].hour[14].temp_f}` + `°F`;
+    t11temp.innerText = `${result.forecast.forecastday[0].hour[15].temp_f}` + `°F`;
+    t12temp.innerText = `${result.forecast.forecastday[0].hour[16].temp_f}` + `°F`;
+    t13temp.innerText = `${result.forecast.forecastday[0].hour[17].temp_f}` + `°F`;
+    t14temp.innerText = `${result.forecast.forecastday[0].hour[18].temp_f}` + `°F`;
+    t15temp.innerText = `${result.forecast.forecastday[0].hour[19].temp_f}` + `°F`;
+    t16temp.innerText = `${result.forecast.forecastday[0].hour[20].temp_f}` + `°F`;
+    t17temp.innerText = `${result.forecast.forecastday[0].hour[21].temp_f}` + `°F`;
+    t18temp.innerText = `${result.forecast.forecastday[0].hour[22].temp_f}` + `°F`;
+    t19temp.innerText = `${result.forecast.forecastday[0].hour[23].temp_f}` + `°F`;
+
+
+    }
+    else{
+    console.log("C");
+    temp.innerText =`${result.current.temp_c}`+ `°C`;
+    maxtemp.innerText = `${result.forecast.forecastday[0].day.mintemp_c}` + `°C` + ` ~ `  + `${result.forecast.forecastday[0].day.maxtemp_c}` + `°C`; 
+    tempd1.innerText =   `${result.forecast.forecastday[0].day.mintemp_c}` + `°C` + ` ~ ` + `${result.forecast.forecastday[0].day.maxtemp_c}` + `°C` ;
+    tempd2.innerText =   `${result.forecast.forecastday[1].day.mintemp_c}` + `°C` + ` ~ ` + `${result.forecast.forecastday[1].day.maxtemp_c}` + `°C` ;
+    tempd3.innerText =   `${result.forecast.forecastday[2].day.mintemp_c}` + `°C` + ` ~ ` + `${result.forecast.forecastday[2].day.maxtemp_c}` + `°C` ;
+    tempd4.innerText =   `${result.forecast.forecastday[3].day.mintemp_c}` + `°C` + ` ~ ` + `${result.forecast.forecastday[3].day.maxtemp_c}` + `°C` ;
+    tempd5.innerText =   `${result.forecast.forecastday[4].day.mintemp_c}` + `°C` + ` ~ ` + `${result.forecast.forecastday[4].day.maxtemp_c}` + `°C` ;
+        
+    t1temp.innerText = `${result.forecast.forecastday[0].hour[5].temp_c}` + `°C`;
+    t2temp.innerText = `${result.forecast.forecastday[0].hour[6].temp_c}` + `°C`;
+    t3temp.innerText = `${result.forecast.forecastday[0].hour[7].temp_c}` + `°C`;
+    t4temp.innerText = `${result.forecast.forecastday[0].hour[8].temp_c}` + `°C`;
+    t5temp.innerText = `${result.forecast.forecastday[0].hour[9].temp_c}` + `°C`;
+    t6temp.innerText = `${result.forecast.forecastday[0].hour[10].temp_c}` + `°C`;
+    t7temp.innerText = `${result.forecast.forecastday[0].hour[11].temp_c}` + `°C`;
+    t8temp.innerText = `${result.forecast.forecastday[0].hour[12].temp_c}` + `°C`;
+    t9temp.innerText = `${result.forecast.forecastday[0].hour[13].temp_c}` + `°C`;
+    t10temp.innerText = `${result.forecast.forecastday[0].hour[14].temp_c}` + `°C`;
+    t11temp.innerText = `${result.forecast.forecastday[0].hour[15].temp_c}` + `°C`;
+    t12temp.innerText = `${result.forecast.forecastday[0].hour[16].temp_c}` + `°C`;
+    t13temp.innerText = `${result.forecast.forecastday[0].hour[17].temp_c}` + `°C`;
+    t14temp.innerText = `${result.forecast.forecastday[0].hour[18].temp_c}` + `°C`;
+    t15temp.innerText = `${result.forecast.forecastday[0].hour[19].temp_c}` + `°C`;
+    t16temp.innerText = `${result.forecast.forecastday[0].hour[20].temp_c}` + `°C`;
+    t17temp.innerText = `${result.forecast.forecastday[0].hour[21].temp_c}` + `°C`;
+    t18temp.innerText = `${result.forecast.forecastday[0].hour[22].temp_c}` + `°C`;
+    t19temp.innerText = `${result.forecast.forecastday[0].hour[23].temp_c}` + `°C`;
+
+    }
+    });
+
     loc.innerText = ` ${result.location.name}` + `,`  +  ` ${result.location.region} ` +  ` ${result.location.country} `;
     temp.innerText =`${result.current.temp_c}`+ `°C`;
     current.innerText = `${result.current.condition.text}`;
@@ -230,7 +300,6 @@ search.addEventListener("click", async () => {
     
 });
 
-
 window.addEventListener("load", async () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(async (position) => {
@@ -247,6 +316,7 @@ window.addEventListener("load", async () => {
         alert("Please enable location services to get the weather for your current location.");
     }
 });
+
 
 async function check(citi){
     const promis = await fetch(
