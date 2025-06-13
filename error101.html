@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <section class="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900">
+  <div class="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+    <div class="max-w-prose">
+      <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
+        Error 101: Understand user flow and Facing
+        <strong class="text-red-600"> Internet </strong>
+        Connection Issues
+      </h1>
+
+      <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200">
+        Currently Facing Error 101: This error indicates that your internet connection is not working properly. This can happen due to various reasons such as network issues, server downtime, or incorrect API keys.
+        </p>
+
+      <div class="mt-4 flex gap-4 sm:mt-6">
+        <a
+          class="inline-block rounded border border-white-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-blue-700"
+          href="#" id="check-connection" onclick="window.location.reload();"
+        >
+            Check Connection
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script>
+
+window.onload = function(){
+  if(navigator.onLine){
+    window.location.href = "weatherForcasst.html";
+  } else {
+    document.getElementById("check-connection").innerText = "You are offline";
+  }
+};
+</script>
+</html>
