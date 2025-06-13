@@ -230,6 +230,24 @@ search.addEventListener("click", async () => {
     
 });
 
+
+window.addEventListener("load", async () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(async (position) => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            const result = await fetch(
+                `https://api.weatherapi.com/v1/forecast.json?key=285b910e5f1d4b4f96781437250906&q=${lat},${lon}&days=5&aqi=yes&alerts=no`
+            );
+            const data = await result.json();
+            city.value = data.location.name;
+            search.click();
+        });
+    } else {
+        alert("Please enable location services to get the weather for your current location.");
+    }
+});
+
 async function check(citi){
     const promis = await fetch(
         // `http://api.weatherapi.com/v1/current.json?key=285b910e5f1d4b4f96781437250906&q=${citi}&aqi=yes`
