@@ -233,7 +233,7 @@ search.addEventListener("click", async () => {
 async function check(citi){
     const promis = await fetch(
         // `http://api.weatherapi.com/v1/current.json?key=285b910e5f1d4b4f96781437250906&q=${citi}&aqi=yes`
-       `http://api.weatherapi.com/v1/forecast.json?key=285b910e5f1d4b4f96781437250906&q=${citi}&days=5&aqi=yes&alerts=no`
+       `https://api.weatherapi.com/v1/forecast.json?key=285b910e5f1d4b4f96781437250906&q=${citi}&days=5&aqi=yes&alerts=no`
         
     );
     return await promis.json();
