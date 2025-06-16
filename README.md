@@ -48,7 +48,7 @@ cd Weather-web-App
 Open index.html in your browser.
 
 Enter a location and view the current weather and forecast 
+![Uploading 951_1x_shots_so-overlay.png…]()
 
-![191_1x_shots_so-overlay](https://github.com/user-attachments/assets/156d46d0-289a-4bb9-ba33-119a2f2faa4f)
 
 
