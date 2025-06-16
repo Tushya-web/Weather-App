@@ -1,4 +1,31 @@
+
 // alert("Welcome to the Weather APP")
+
+const dark = document.getElementById("dark")
+const light = document.getElementById("light")
+const body = document.getElementById("body")
+const darkimg = document.getElementById("darkimg")
+const blurbg = document.getElementsByClassName("dropshadow")
+
+function dark11() {
+    body.style.backgroundColor = "black";
+    dark.style.display = "none";
+    light.style.display = "block";
+    for(i=0; i<=blurbg.length; i++){
+    blurbg[i].style.color = "white";
+    }
+}
+
+function light11(){
+    body.style.backgroundColor = "white";
+    light.style.display = "none";
+    dark.style.display = "block"
+    for(i=0; i<=blurbg.length; i++){
+    blurbg[i].style.color = "black";
+    }
+}
+
+
 const city = document.getElementById("city")
 const search = document.getElementById("search")
 const temp = document.getElementById("temp")
@@ -108,13 +135,6 @@ const monthNames = [
 ];
 
 search.addEventListener("click", async () => {
-
-    Notification.requestPermission().then(function (){
-        new Notification('Weather App',{
-            body: 'Thanks You For using Our Website. Get the latest weather updates.',
-            icon: 'https://cdn-icons-png.flaticon.com/512/4140/4140043.png'
-        });
-    })
 
     const citi = city.value;
     const result = await check(citi);
@@ -315,6 +335,14 @@ window.addEventListener("load", async () => {
     } else {
         alert("Please enable location services to get the weather for your current location.");
     }
+
+    Notification.requestPermission().then(function (){
+        new Notification('Weather App',{
+            body: 'Thanks You For using Our Website. Get the latest weather updates.',
+            icon: 'IMG/MolyPix_231533.png'
+        });
+    })
+
 });
 
 
