@@ -34,7 +34,7 @@ Also Had Dark Mode Feature For Better Quality
 🛠️ Tech Stack
 Frontend: HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
 
-Libraries: Bootstrap for styling and responsiveness
+Libraries: Bootstrap and tailwind for styling and responsiveness
 
 API: WeatherFreeAPI API for real-time weather data 
 
