@@ -3,47 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Weather</title>
+    <title>Tushya_Web</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- font library -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" > 
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.s 1.2/dist/flowbite.min.css" rel="stylesheet" >  -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
+    <link href="IMG/MolyPix_231533.png" rel="icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
     <!-- tailwindcss library -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>    
+<body id="body">    
   <center>
-        <h2 class="main-heading text-black">"Real-time weather, right when you need it."</h2>
+        <h2 class="main-heading dropshadow">"Real-time weather, right when you need it."</h2>
     </center>
+    <button id="dark" class="bg-black h-10 w-10 shadow block absolute rounded-full top-8 right-3 p-2 m-2 ">
+      <img id="lightimg" onclick="dark11()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARJJREFUSEvVlUHOAUEQhd/bs+IAnARH+NkicTIJtjjCz0k4gH/12z8p6UlGm57pFi0xy57u+qpfva4iMn9MiS/pF0CPZD/2XCpg6QCjlwGSLMNzbICmfU83kCQAB5LRWRokJF8V4EkGSVMAPwAGLuMjgD3JTXEDSXZu6NentgaSLOgKQCsgxRXAnOQ+JFUQ4ILvmjR2/8chSB3gvyZzn3sl2a5KphLgNF9HZl9sm5VrUiyGAFsA40TAjuTEP3MH+BaTdAHQSQT8keyW4sGsXgAeLPYGgMUzwOIzEvlSZC+y0zGfTR3AXnG+h1aCvLdVOMveLVZqZDHNrnIYPbjIZgGAU+52nXfg1L3e75jJif2ncfsNF9qUGRUP+18AAAAASUVORK5CYII=">
+    </button>
+    <button id="light"  class="bg-white h-10 w-10 shadow hidden rounded-full absolute top-8 right-3 p-2 m-2">
+      <img id="darkimg" onclick="light11()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQxJREFUSEu1le0RgjAQRJdOtBK1ErUStRK1Eu1ErUR5DmFiSMjFwP1ixmHffSxro5mrmVlfOcBC0kHSTtKpbeZY2tAYADHEXV0k7acCnLuufb3JJgg7dxC6Z4qiCle0lnRLKCzbqZ5F6u3hQkBsNU4zZ4goO3zpPdJh9QRYkQlStZF0r1lR6riT2XRs/w5SPIV/AwsAF3ELc/mA3IqcKBAmMVnWB5A7D2NriF8t2RTaFAAga7kpcNfLe4kv/vtbCMhZ1QrugzH2dRIVREZN9W6LAVgRkJJV+c38pG4qX/6FDCJ9LMCAcJOtYRoOSpwPosSSkIC4yaoD8ezcg1URTWaUBVBz7OyffpU4L38AHm8vGcQJKBgAAAAASUVORK5CYII"> 
+    </button>
 
 <div class="inputouter">
   <div class="InputContainer">
-      <input placeholder="Search City..." id="city" class="input" name="text" type="text">
-    <button class="button1" id="search" >
+      <input placeholder="Search City..." id="city" class="input shadow" name="text" type="text">
+    <button class="button1" id="search">
       <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
       Forecast
     </button>
-          <label class="relative inline-flex items-center cursor-pointer py-2">
+    <label class="relative inline-flex items-center cursor-pointer py-2">
   <input class="sr-only peer" value="" type="checkbox" id="toggle">
     <div class="peer rounded-full outline-none duration-100 after:duration-500 w-24 h-10 backdrop-blur bg-transparent shadow peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-b-black  after:content-['°C'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-blue-400 after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-black after:font-bold peer-checked:after:translate-x-14 peer-checked:after:content-['°F'] peer-checked:after:border-black">
   </div>
-</label>
+  </label>
   </div>
 </div>
 <br>
-<center>
-<center> <h1 id="loc" class="text-black font-semibold">London</h1></center>
+<center> <h1 id="loc" class="dropshadow font-semibold ">London</h1>
 <div class="info">
-  <h1 id="temp">Temp...</h1>
-  <div class="ml-4 font-sans font-medium"> <p id="current"> what happen</p>
-    <p id="maxtemp"> MAX ~ MIN</p>
+  <h1 id="temp" class="dropshadow">Temp...</h1>
+  <div class="ml-4 font-sans font-medium"> <h4 id="current" class="dropshadow"> what happen</h4>
+    <h5 id="maxtemp" class="dropshadow"> MAX ~ MIN</h5>
   </div>
-</div>
+</div></center>
 <center>
 <div class="box-out">
   <div class="mid">
@@ -93,140 +99,141 @@
           </div>
         </div>    
       </div>
- </center>     
+     
 
-<div class="grid lg:gap-8 ">
-  <div class="h-max w-96 flex-block rounded bg-white m-4 px-4 py-4 backdrop-blur shadow lg:w-auto lg:m-5 ">
+<div class="grid lg:gap-8">
+  <div class="blurbg h-max w-96 flex-block rounded m-4 px-4 py-4 lg:w-auto lg:m-5 ">
     <h5 class="text-lg font-bold text-gray-800 px-2 py-2">Today Hourly Weather Forecast</h5>
-    <div class="h-44 flex w-auto items-center justify-around overflow-x-auto lg:overflow-x-visible ">
+    <div class="h-44 flex w-auto items-center justify-around overflow-x-auto lg:overflow-x-visible">
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">5 AM</p>
+        <p class="font-bold">5 AM</p>
         <img src="IMG/cloud.svg" id="t1" class="h-8 w-8">
-        <p id="t1temp" class="text-sm text-black px-2 lg:px-1 ">20°C</p>
-        <p id="rain1" class="text-sm text-black">0%</p>
+        <p id="t1temp" class="text-sm px-2 lg:px-1 ">20°C</p>
+        <p id="rain1" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">6 AM</p>
+        <p class="font-bold ">6 AM</p>
         <img src="IMG/cloud.svg" id="t2" class="h-8 w-8">
-        <p id="t2temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain2" class="text-sm text-black">0%</p>
+        <p id="t2temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain2" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">7 AM</p>
+        <p class="font-bold ">7 AM</p>
         <img src="IMG/cloud.svg" id="t3" class="h-8 w-8">
-        <p id="t3temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain3" class="text-sm text-black">0%</p>
+        <p id="t3temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain3" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">8 AM</p>
+        <p class="font-bold ">8 AM</p>
         <img src="IMG/cloud.svg" id="t4" class="h-8 w-8">
-        <p id="t4temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain4" class="text-sm text-black">0%</p>
+        <p id="t4temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain4" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">9 AM</p>
+        <p class="font-bold ">9 AM</p>
         <img src="IMG/cloud.svg" id="t5" class="h-8 w-8">
-        <p id="t5temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain5" class="text-sm text-black">0%</p>
+        <p id="t5temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain5" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">10AM</p>
+        <p class="font-bold ">10AM</p>    
         <img src="IMG/cloud.svg" id="t6" class="h-8 w-8">
-        <p id="t6temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain6" class="text-sm text-black">0%</p>
+        <p id="t6temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain6" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">11AM</p>
+        <p class="font-bold ">11AM</p>
         <img src="IMG/cloud.svg" id="t7" class="h-8 w-8">
-        <p id="t7temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain7" class="text-sm text-black">0%</p>
+        <p id="t7temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain7" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">12PM</p>
+        <p class="font-bold ">12PM</p>
         <img src="IMG/cloud.svg" id="t8" class="h-8 w-8">
-        <p id="t8temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain8" class="text-sm text-black">0%</p>
+        <p id="t8temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain8" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">1 PM</p>
+        <p class="font-bold ">1 PM</p>
         <img src="IMG/cloud.svg" id="t9" class="h-8 w-8">
-        <p id="t9temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain9" class="text-sm text-black">0%</p>
+        <p id="t9temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain9" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">2 PM</p>
+        <p class="font-bold ">2 PM</p>
         <img src="IMG/cloud.svg" id="t10" class="h-8 w-8">
-        <p id="t10temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain10" class="text-sm text-black">0%</p>
+        <p id="t10temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain10" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">3 PM</p>
+        <p class="font-bold ">3 PM</p>
         <img src="IMG/cloud.svg" id="t11" class="h-8 w-8">
-        <p id="t11temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain11" class="text-sm stext-black">0%</p>
+        <p id="t11temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain11" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">4 PM</p>
+        <p class="font-bold ">4 PM</p>
         <img src="IMG/cloud.svg" id="t12" class="h-8 w-8">
-        <p id="t12temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain12" class="text-sm text-black">0%</p>
+        <p id="t12temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain12" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">5 PM</p>
+        <p class="font-bold ">5 PM</p>
         <img src="IMG/cloud.svg" id="t13" class="h-8 w-8">
-        <p id="t13temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain13" class="text-sm text-black">0%</p>
+        <p id="t13temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain13" class="text-sm ">0%</p>    
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">6 PM</p>
+        <p class="font-bold ">6 PM</p>
         <img src="IMG/cloud.svg" id="t14" class="h-8 w-8">
-        <p id="t14temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain14" class="text-sm text-black">0%</p>
+        <p id="t14temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain14" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">7 PM</p>
+        <p class="font-bold ">7 PM</p>
         <img src="IMG/cloud.svg" id="t15" class="h-8 w-8">
-        <p id="t15temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain15" class="text-sm text-black">0%</p>
+        <p id="t15temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain15" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">8 PM</p>
+        <p class="font-bold ">8 PM</p>
         <img src="IMG/cloud.svg" id="t16" class="h-8 w-8">
-        <p id="t16temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain16" class="text-sm text-black">0%</p>
+        <p id="t16temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain16" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">9 PM</p>
+        <p class="font-bold ">9 PM</p>
         <img src="IMG/cloud.svg" id="t17" class="h-8 w-8">
-        <p id="t17temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain17" class="text-sm text-black">0%</p>
+        <p id="t17temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain17" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">10 PM</p>
+        <p class="font-bold ">10 PM</p>
         <img src="IMG/cloud.svg" id="t18" class="h-8 w-8">
-        <p id="t18temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain18" class="text-sm text-black">0%</p>
+        <p id="t18temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain18" class="text-sm ">0%</p>
       </div>
       <div class="flex-row items-center ">
-        <p class="font-bold text-black">11 PM</p>
+        <p class="font-bold ">11 PM</p>
         <img src="IMG/cloud.svg" id="t19" class="h-8 w-8">
-        <p id="t19temp" class="text-sm text-black px-2 lg:px-1">20°C</p>
-        <p id="rain19" class="text-sm text-black">0%</p>
+        <p id="t19temp" class="text-sm px-2 lg:px-1">20°C</p>
+        <p id="rain19" class="text-sm ">0%</p>
       </div>
     </div>
   </div>
 </div>
 
+
 <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-  <div class="h-max rounded bg-white m-5 px-4 py-4 backdrop-blur shadow">
-    <div class=" flex h-auto bg-white m-3 py-2 px-2 shadow  ">
+  <div class="h-max rounded m-5 px-4 py-4 backdrop-blur blurbg shadow">
+    <div class=" flex h-auto rounded bg-white m-3 py-2 px-2 shadow  ">
           <img src="IMG/sunrise.svg" class="sicon">
           <div class=" flex-row px-2 ">
             <h5>Sunrise</h5>
             <h6 id="sunrise">loading..</h6>
           </div>
       </div>
-      <div class="flex h-auto bg-white m-3 py-2 px-2 shadow">
+      <div class="flex h-auto rounded bg-white m-3 py-2 px-2 shadow">
            <img src="IMG/sunset (1).svg" class="sicon">
             <div class="flex-row px-2 ">
             <h5>Sunset</h5>
@@ -234,7 +241,7 @@
             </div>
       </div>
   </div>
-  <div class="h-max rounded bg-white m-5 py-2 px-2 lg:col-span-2">
+  <div class="h-max rounded blurbg m-5 py-2 px-2 lg:col-span-2">
   <div class="container mx-auto px-4 py-8 bg-white shadow-lg rounded-lg">
     <h5 class="text-lg font-bold text-gray-600">5 Days Forecast</h5>
       <div class="flex justify-between items-center mb-4">
@@ -402,7 +409,7 @@
 
 <script>
   
-  window.navigator.onLine = function(){
+  if(!navigator.onLine){
     window.location.href = "error101.html";
 }
 
