@@ -3,33 +3,33 @@ Weather App is a responsive web application built with HTML, CSS, JavaScript, an
 
 ✨ Key Features
 
-Current Weather Display
+▪️Current Weather Display
 
-▪️ Shows temperature, "feels like" temperature, humidity, wind speed, sunrise/sunset times, and a descriptive icon 
+Shows temperature, "feels like" temperature, humidity, wind speed, sunrise/sunset times, and a descriptive icon 
 
-Hourly Forecast
+▪️Hourly Forecast
 
-▪️ Present Current and whole day Weather Information based on Hour
+Present Current and whole day Weather Information based on Hour
 
-5‑Day Weather Forecast
+▪️5‑Day Weather Forecast
 
-▪️ Presents daily temperature and conditions for the next five days .
+Presents daily temperature and conditions for the next five days .
 
-Unit Switching
+▪️Unit Switching
 
-▪️Toggle between Celsius and Fahrenheit 
+Toggle between Celsius and Fahrenheit 
 
-Location Input
+▪️Location Input
 
-▪️ Enter any city or country to fetch local weather 
+Enter any city or country to fetch local weather 
 
-Responsive Design
+▪️Responsive Design
 
-▪️Adapts smoothly across devices of varying screen sizes via Bootstrap and custom media queries 
+Adapts smoothly across devices of varying screen sizes via Bootstrap and custom media queries 
 
-Dark Mode
+▪️Dark Mode
 
-▪️ Also Had Dark Mode Feature For Better Quality
+Also Had Dark Mode Feature For Better Quality
 
 🛠️ Tech Stack
 Frontend: HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
