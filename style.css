@@ -1,4 +1,15 @@
+.dropshadow{
+    /* filter: drop-shadow(-2px 2px 10px white); */
+    color: rgb(0, 0, 0);
+}
 
+.blurbg{
+    box-shadow: 0px 0px 20px rgba(135, 135, 135, 0.664);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(41px);
+    background: rgba(255, 255, 255, 0.564);
+    color:black;
+}
 
 .video {
     background-color: rgb(255, 255, 255);
@@ -20,7 +31,8 @@
 }
 
 body,html {
-    background-image: url("IMG/background.svg");
+    background-color: rgb(255, 255, 255);
+    background-image: url("IMG/bbblurry.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Noto Sans, sans-serif;
@@ -40,14 +52,13 @@ body,html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.523);
   box-shadow: 0px 0px 20px rgba(135, 135, 135, 0.664);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 31pt;
   backdrop-filter: blur(20px);
+  border-radius: 31pt;
   overflow: hidden;
   cursor: pointer;
-
 }
 
 .input {
@@ -57,7 +68,7 @@ body,html {
   outline: none;
   caret-color: rgb(255, 81, 0);
   background-color: rgb(255, 255, 255);
- border-radius: 31pt;
+  border-radius: 31pt;
   padding-left: 15px;
   letter-spacing: 0.8px;
   color: rgb(19, 19, 19);
@@ -65,7 +76,6 @@ body,html {
 }
 .info {
     backdrop-filter: blur(10px);
-    color: rgb(0, 0, 0);
     margin: 20px;
     display: flex;
     flex-direction: column; /* Default to column for small screens */
@@ -159,6 +169,7 @@ body,html {
 }
 
 .inn{
+    color: rgb(0, 0, 0);
     background-color: #ffffff;
     width: 22%;
     height: 105%;
@@ -184,8 +195,8 @@ body,html {
     width: 60px;
     height: 50px;
     border-radius: .25rem;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.694);
+    background-color: #ffffff00;
+    /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.694); */
     display: flex;
     align-items: center;
     justify-content: center;
