@@ -36,7 +36,8 @@ Frontend: HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
 
 Libraries: Bootstrap and tailwind for styling and responsiveness
 
-API: WeatherFreeAPI API for real-time weather data 
+API: WeatherFreeAPI API for real-time weather data[Free API]
+# APILINK: https://www.weatherapi.com/
 
 🚀 Getting Started
 Clone the repo:
