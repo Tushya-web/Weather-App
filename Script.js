@@ -26,6 +26,7 @@ function light11(){
 }
 
 
+
 const city = document.getElementById("city")
 const search = document.getElementById("search")
 const temp = document.getElementById("temp")
@@ -33,6 +34,8 @@ const current = document.getElementById("current")
 const maxtemp = document.getElementById("maxtemp")
 
 const toggle = document.getElementById("toggle")
+
+api = "9b27e810920640b9ba874027252306"
 
 const time = document.querySelectorAll("#local_time")
 const humidity = document.getElementById("humidity")
@@ -326,11 +329,11 @@ window.addEventListener("load", async () => {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
             const result = await fetch(
-                `https://api.weatherapi.com/v1/forecast.json?key=285b910e5f1d4b4f96781437250906&q=${lat},${lon}&days=5&aqi=yes&alerts=no`
+                `https://api.weatherapi.com/v1/forecast.json?key=${api}&q=${lat},${lon}&days=5&aqi=yes&alerts=no`
             );
             const data = await result.json();
             city.value = data.location.name;
-            search.click();
+            await search.click();
         });
     } else {
         alert("Please enable location services to get the weather for your current location.");
@@ -349,7 +352,7 @@ window.addEventListener("load", async () => {
 async function check(citi){
     const promis = await fetch(
         // `http://api.weatherapi.com/v1/current.json?key=285b910e5f1d4b4f96781437250906&q=${citi}&aqi=yes`
-       `https://api.weatherapi.com/v1/forecast.json?key=285b910e5f1d4b4f96781437250906&q=${citi}&days=5&aqi=yes&alerts=no`
+       `https://api.weatherapi.com/v1/forecast.json?key=${api}&q=${citi}&days=5&aqi=yes&alerts=no`
         
     );
     return await promis.json();
