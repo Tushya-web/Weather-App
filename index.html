@@ -8,6 +8,7 @@
     <meta property="og:url" content=https://tushya-web.github.io/Weather_app/>
     <meta property="og:description" content="Get real-time weather updates instantly when you need them. Check forecasts quickly and plan your day with confidence. Try it now.">
     <meta property="og:type" content=website>
+    <meta property="og:img" content="">
     <title>Tushya_WeatherApp</title>
     <meta name="description" content="Get real-time weather updates instantly when you need them. Check forecasts quickly and plan your day with confidence. Try it now.">
     <link rel="stylesheet" href="style.css">
@@ -19,7 +20,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.s 1.2/dist/flowbite.min.css" rel="stylesheet" >  -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="IMG/MolyPix_231533.png" rel="icon">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
     <!-- tailwindcss library -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -29,10 +30,10 @@
         <h1 class="main-heading font-semibold dropshadow">"Stay Updated with Real-Time Weather Forecasts at Your Fingertips"</h1>
     </center>
     <button id="dark" class="bg-black h-10 w-10 shadow block absolute rounded-full top-8 right-3 p-2 m-2 ">
-      <img id="lightimg" onclick="dark11()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARJJREFUSEvVlUHOAUEQhd/bs+IAnARH+NkicTIJtjjCz0k4gH/12z8p6UlGm57pFi0xy57u+qpfva4iMn9MiS/pF0CPZD/2XCpg6QCjlwGSLMNzbICmfU83kCQAB5LRWRokJF8V4EkGSVMAPwAGLuMjgD3JTXEDSXZu6NentgaSLOgKQCsgxRXAnOQ+JFUQ4ILvmjR2/8chSB3gvyZzn3sl2a5KphLgNF9HZl9sm5VrUiyGAFsA40TAjuTEP3MH+BaTdAHQSQT8keyW4sGsXgAeLPYGgMUzwOIzEvlSZC+y0zGfTR3AXnG+h1aCvLdVOMveLVZqZDHNrnIYPbjIZgGAU+52nXfg1L3e75jJif2ncfsNF9qUGRUP+18AAAAASUVORK5CYII=">
+      <img id="lightimg" onclick="dark11()" alt="darkmode" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARJJREFUSEvVlUHOAUEQhd/bs+IAnARH+NkicTIJtjjCz0k4gH/12z8p6UlGm57pFi0xy57u+qpfva4iMn9MiS/pF0CPZD/2XCpg6QCjlwGSLMNzbICmfU83kCQAB5LRWRokJF8V4EkGSVMAPwAGLuMjgD3JTXEDSXZu6NentgaSLOgKQCsgxRXAnOQ+JFUQ4ILvmjR2/8chSB3gvyZzn3sl2a5KphLgNF9HZl9sm5VrUiyGAFsA40TAjuTEP3MH+BaTdAHQSQT8keyW4sGsXgAeLPYGgMUzwOIzEvlSZC+y0zGfTR3AXnG+h1aCvLdVOMveLVZqZDHNrnIYPbjIZgGAU+52nXfg1L3e75jJif2ncfsNF9qUGRUP+18AAAAASUVORK5CYII=">
     </button>
     <button id="light"  class="bg-white h-10 w-10 shadow hidden rounded-full absolute top-8 right-3 p-2 m-2">
-      <img id="darkimg" onclick="light11()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQxJREFUSEu1le0RgjAQRJdOtBK1ErUStRK1Eu1ErUR5DmFiSMjFwP1ixmHffSxro5mrmVlfOcBC0kHSTtKpbeZY2tAYADHEXV0k7acCnLuufb3JJgg7dxC6Z4qiCle0lnRLKCzbqZ5F6u3hQkBsNU4zZ4goO3zpPdJh9QRYkQlStZF0r1lR6riT2XRs/w5SPIV/AwsAF3ELc/mA3IqcKBAmMVnWB5A7D2NriF8t2RTaFAAga7kpcNfLe4kv/vtbCMhZ1QrugzH2dRIVREZN9W6LAVgRkJJV+c38pG4qX/6FDCJ9LMCAcJOtYRoOSpwPosSSkIC4yaoD8ezcg1URTWaUBVBz7OyffpU4L38AHm8vGcQJKBgAAAAASUVORK5CYII"> 
+      <img id="darkimg" onclick="light11()" alt="lightmode" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQxJREFUSEu1le0RgjAQRJdOtBK1ErUStRK1Eu1ErUR5DmFiSMjFwP1ixmHffSxro5mrmVlfOcBC0kHSTtKpbeZY2tAYADHEXV0k7acCnLuufb3JJgg7dxC6Z4qiCle0lnRLKCzbqZ5F6u3hQkBsNU4zZ4goO3zpPdJh9QRYkQlStZF0r1lR6riT2XRs/w5SPIV/AwsAF3ELc/mA3IqcKBAmMVnWB5A7D2NriF8t2RTaFAAga7kpcNfLe4kv/vtbCMhZ1QrugzH2dRIVREZN9W6LAVgRkJJV+c38pG4qX/6FDCJ9LMCAcJOtYRoOSpwPosSSkIC4yaoD8ezcg1URTWaUBVBz7OyffpU4L38AHm8vGcQJKBgAAAAASUVORK5CYII"> 
     </button>
 
 <div class="inputouter">
