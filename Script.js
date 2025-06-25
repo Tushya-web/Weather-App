@@ -11,7 +11,7 @@ function dark11() {
     body.style.backgroundColor = "black";
     dark.style.display = "none";
     light.style.display = "block";
-    for(i=0; i<=blurbg.length; i++){
+    for(i=0; i<blurbg.length; i++){
     blurbg[i].style.color = "white";
     }
 }
@@ -20,12 +20,10 @@ function light11(){
     body.style.backgroundColor = "white";
     light.style.display = "none";
     dark.style.display = "block"
-    for(i=0; i<=blurbg.length; i++){
+    for(i=0; i<blurbg.length; i++){
     blurbg[i].style.color = "black";
     }
 }
-
-
 
 const city = document.getElementById("city")
 const search = document.getElementById("search")
