@@ -340,7 +340,7 @@ window.addEventListener("load", async () => {
     Notification.requestPermission().then(function (){
         new Notification('Weather App',{
             body: 'Thanks You For using Our Website. Get the latest weather updates.',
-            icon: 'IMG/MolyPix_231533.png'
+            icon: 'IMG/android-chrome-192x192'
         });
     })
 
