@@ -1,3 +1,6 @@
+
+![951_1x_shots_so-overlay](https://github.com/user-attachments/assets/f4a03490-91e8-4206-8a6f-6edd8aad0fc4)
+
 # Weather_app
 Weather App is a responsive web application built with HTML, CSS, JavaScript, Tailwind-css, API and Bootstrap. It uses the WeatherFreeAPI API to fetch weather data. You can check the current weather plus a 5‑day forecast for any location worldwide 
 
@@ -52,7 +55,6 @@ Enter a location and view the current weather and forecast
 
 # Here Some ScreenShot
 
-![951_1x_shots_so-overlay](https://github.com/user-attachments/assets/f4a03490-91e8-4206-8a6f-6edd8aad0fc4)
 
 
 
