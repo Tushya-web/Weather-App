@@ -1,69 +1,71 @@
-
 ![951_1x_shots_so-overlay](https://github.com/user-attachments/assets/f4a03490-91e8-4206-8a6f-6edd8aad0fc4)
 
-# Weather App
+ [![Live Demo](https://img.shields.io/badge/Live_Demo-000?style=for-the-badge&logo=github&logoColor=white)](https://tushya-web.github.io/Weather-App/)
 
-A responsive Weather Forecast Web Application built using HTML5, CSS3, JavaScript, Tailwind CSS, and Bootstrap. It fetches real-time weather data using the WeatherAPI and displays current weather, hourly forecast, and a 5-day forecast for any location.
+# Weather App   
 
-Features
-Current Weather
+> A responsive Weather Forecast Web Application built using HTML5, CSS3, JavaScript, Tailwind CSS, and Bootstrap.
+> It fetches real-time weather data using the WeatherAPI and displays current weather, hourly updates, and a 5-day forecast.
 
-Shows temperature
+## Tech Stack
+  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7E018?style=for-the-badge&logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-8211F6?style=for-the-badge&logo=bootstrap&logoColor=white)
+![API](https://img.shields.io/badge/Weather_API-0A84FF?style=for-the-badge&logo=cloud&logoColor=white)
 
-Feels-like temperature
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/Tushya-web/Weather-App?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/Tushya-web/Weather-App?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/Tushya-web/Weather-App?style=for-the-badge)
 
-Humidity
+![Responsive](https://img.shields.io/badge/Responsive-Yes-blue?style=for-the-badge)
+![Dark Mode](https://img.shields.io/badge/Dark_Mode-Enabled-black?style=for-the-badge)
 
-Wind speed
 
-Sunrise and sunset times
+## Features
+**Current Weather**
 
-Weather icon and condition description
+- Temperature
 
-Hourly Forecast
+- Feels-like temperature
 
-Displays weather information for every hour of the current day
+- Humidity
 
-5-Day Forecast
+- Wind speed
 
-Shows daily temperature summary
+- Weather icon and condition
 
-Weather conditions for the next 5 days
+**Hourly Forecast**
 
-Unit Switching
+- Weather information for every hour of the day
 
-Toggle between Celsius (°C) and Fahrenheit (°F)
+**5-Day Forecast**
 
-Location Input
+- Daily temperature summary
 
-Enter any city or country to fetch its weather data
+- Weather condition overview
 
-Responsive Design
+**Unit Switching**
 
-Works smoothly across desktop, tablet, and mobile screens
+- Celsius (°C) ↔ Fahrenheit (°F)
 
-Styled using Tailwind CSS and Bootstrap
+**Location Input**
 
-Dark Mode
+- Enter any city or country
 
-Provides a better viewing experience during night usage
+**Responsive Design**
 
-Tech Stack
+- Works on desktop, tablet, and mobile
 
-HTML5
+- Styled with Tailwind CSS + Bootstrap
 
-CSS3
+**Dark Mode**
 
-JavaScript (ES6+)
-
-Tailwind CSS
-
-Bootstrap
-
-WeatherAPI (https://www.weatherapi.com/
-)
-
-Getting Started
+- Better viewing experience at night
 
 
 ### Installation & Setup (Step-by-Step)
@@ -78,6 +80,14 @@ git clone https://github.com/Tushya-web/Weather-App.git
 ```
 Open Index.html in Web Browser and Forecast the Weather
 ```
+
+This project was created and maintained by **Parmar Tushya Rajeshkumar**.  
+Built with HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap, and WeatherAPI.
+
+Special thanks to:
+- WeatherAPI for providing free weather data
+- Open-source libraries and tools used in this project  
+
 
 
 
