@@ -33,7 +33,7 @@ const maxtemp = document.getElementById("maxtemp")
 
 const toggle = document.getElementById("toggle")
 
-api = "9b27e810920640b9ba874027252306"
+api = "fa197bd8ae374dc3bf495553251212"
 
 const time = document.querySelectorAll("#local_time")
 const humidity = document.getElementById("humidity")
@@ -355,6 +355,7 @@ async function check(citi){
     );
     return await promis.json();
 }
+
 
 
 
