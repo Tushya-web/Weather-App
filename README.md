@@ -53,7 +53,19 @@ Open index.html in your browser.
 
 Enter a location and view the current weather and forecast 
 
-# Here Some ScreenShot
+
+### Installation & Setup (Step-by-Step)
+
+**1️. Clone the Repository**
+```
+git clone https://github.com/Tushya-web/Weather-App.git
+
+```
+
+**2️. Then Just Open Index.html**
+```
+Open Index.html in Web Browser and Forecast the Weather
+```
 
 
 
