@@ -8,21 +8,41 @@ const darkimg = document.getElementById("darkimg")
 const blurbg = document.getElementsByClassName("dropshadow")
 
 function dark11() {
-    body.style.backgroundColor = "black";
+body.style.background = "linear-gradient(135deg, #1e1b4b 0%, #312e81 25%, #4338ca 55%, #4f46e5 100%)";
     dark.style.display = "none";
     light.style.display = "block";
     for(i=0; i<blurbg.length; i++){
     blurbg[i].style.color = "white";
     }
+       document.querySelectorAll(".inn").forEach(c => c.classList.add("dark-card"));
+       document.querySelectorAll(".blurbg").forEach(b => b.classList.add("dark-blur"));
+       document.querySelectorAll(".bg-white").forEach(el => {
+    el.classList.add("dark-inner");
+
+        body.classList.add("dark");
+body.classList.remove("light");
+});
+
 }
 
 function light11(){
-    body.style.backgroundColor = "white";
+    body.style.background = "linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 25%, #c4b5fd 55%, #a78bfa 100%)";
+
     light.style.display = "none";
     dark.style.display = "block"
     for(i=0; i<blurbg.length; i++){
     blurbg[i].style.color = "black";
     }
+    document.querySelectorAll(".inn").forEach(c => c.classList.remove("dark-card"));
+    document.querySelectorAll(".blurbg").forEach(b => b.classList.remove("dark-blur"));
+
+    document.querySelectorAll(".bg-white").forEach(el => {
+    el.classList.remove("dark-inner");
+
+
+    body.classList.remove("dark");
+body.classList.add("light");
+});
 }
 
 const city = document.getElementById("city")
@@ -355,8 +375,3 @@ async function check(citi){
     );
     return await promis.json();
 }
-
-
-
-
-
