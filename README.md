@@ -1,57 +1,69 @@
 
 ![951_1x_shots_so-overlay](https://github.com/user-attachments/assets/f4a03490-91e8-4206-8a6f-6edd8aad0fc4)
 
-# Weather_app
-Weather App is a responsive web application built with HTML, CSS, JavaScript, Tailwind-css, API and Bootstrap. It uses the WeatherFreeAPI API to fetch weather data. You can check the current weather plus a 5‑day forecast for any location worldwide 
+# Weather App
 
-✨ Key Features
+A responsive Weather Forecast Web Application built using HTML5, CSS3, JavaScript, Tailwind CSS, and Bootstrap. It fetches real-time weather data using the WeatherAPI and displays current weather, hourly forecast, and a 5-day forecast for any location.
 
-▪️Current Weather Display
+Features
+Current Weather
 
-Shows temperature, "feels like" temperature, humidity, wind speed, sunrise/sunset times, and a descriptive icon 
+Shows temperature
 
-▪️Hourly Forecast
+Feels-like temperature
 
-Present Current and whole day Weather Information based on Hour
+Humidity
 
-▪️5‑Day Weather Forecast
+Wind speed
 
-Presents daily temperature and conditions for the next five days .
+Sunrise and sunset times
 
-▪️Unit Switching
+Weather icon and condition description
 
-Toggle between Celsius and Fahrenheit 
+Hourly Forecast
 
-▪️Location Input
+Displays weather information for every hour of the current day
 
-Enter any city or country to fetch local weather 
+5-Day Forecast
 
-▪️Responsive Design
+Shows daily temperature summary
 
-Adapts smoothly across devices of varying screen sizes via Bootstrap and custom media queries 
+Weather conditions for the next 5 days
 
-▪️Dark Mode
+Unit Switching
 
-Also Had Dark Mode Feature For Better Quality
+Toggle between Celsius (°C) and Fahrenheit (°F)
 
-🛠️ Tech Stack
-Frontend: HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
+Location Input
 
-Libraries: Bootstrap and tailwind for styling and responsiveness
+Enter any city or country to fetch its weather data
 
-API: WeatherFreeAPI API for real-time weather data[Free API]
-# APILINK: https://www.weatherapi.com/
+Responsive Design
 
-🚀 Getting Started
-Clone the repo:
-git clone (https://github.com/Tushya-web/Weather_app.git)
+Works smoothly across desktop, tablet, and mobile screens
 
-Navigate inside:
-cd Weather-web-App
+Styled using Tailwind CSS and Bootstrap
 
-Open index.html in your browser.
+Dark Mode
 
-Enter a location and view the current weather and forecast 
+Provides a better viewing experience during night usage
+
+Tech Stack
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+Tailwind CSS
+
+Bootstrap
+
+WeatherAPI (https://www.weatherapi.com/
+)
+
+Getting Started
 
 
 ### Installation & Setup (Step-by-Step)
