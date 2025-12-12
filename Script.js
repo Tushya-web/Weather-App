@@ -327,7 +327,7 @@ window.addEventListener("load", async () => {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
             const result = await fetch(
-                `https://api.weatherapi.com/v1/forecast.json?key=${api}&q=${lat},${lon}&days=5&aqi=yes&alerts=no`
+                `https://api.weatherapi.com/v1/marine.json?key=${api}&q=${lat},${lon}&days=5`
             );
             const data = await result.json();
             city.value = data.location.name;
@@ -355,6 +355,7 @@ async function check(citi){
     );
     return await promis.json();
 }
+
 
 
 
